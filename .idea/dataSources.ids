@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - test@localhost" uuid="5203b68c-704c-44fd-b2a8-fe3d1c27488a">
+    <database-info product="MySQL" version="5.5.53" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="test">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="billing_simple"/>
+      <schema id="3" name="information_schema"/>
+      <schema id="4" name="library_simple"/>
+      <schema id="5" name="mysql"/>
+      <schema id="6" name="performance_schema"/>
+      <schema id="7" name="project_simple"/>
+      <schema id="8" name="store"/>
+      <schema id="9" name="store_medium"/>
+      <schema id="10" name="store_simple"/>
+      <table id="11" parent="1" name="person"/>
+      <column id="12" parent="11" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(8)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="13" parent="11" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="14" parent="11" name="age">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="15" parent="11" name="isadmin">
+        <data-type>bit(1)|0</data-type>
+      </column>
+      <key id="16" parent="11" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
